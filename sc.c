@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<math.h>
 
 int main()
 {
  int a,b;
  char c,d;
  a:
- printf("what do u want to do\n");
+ printf("what do u want to do [+,-,*,/,s for square root]\n");
  scanf(" %c", &c);
  printf("enter the first value\n");
  scanf("%i", &a);
@@ -14,16 +15,21 @@ int main()
  scanf("%i", &b);
  printf("result is ");
  if(c=='+'){
-    printf("%i",a+b);
+    printf("%d",a+b);
  }
  else if(c=='-'){
-    printf("%i",a-b);
+    printf("%d",a-b);
  }
  else if(c=='*'){
     printf("%i",a*b);
  }
  else if(c=='/'){
     printf("%i",a/b);
+ }
+ else if(c=='s'){
+    printf("%i", (int)sqrt(a));
+    printf("\n");
+    printf("%i", (int)sqrt(b));
  }
  else
     printf("error");
