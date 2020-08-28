@@ -7,7 +7,7 @@ int main()
  int a,b;
  char c,d;
  a:
- printf("what do u want to do [+,-,*,/,s for square root]\n");
+ printf("what do u want to do [+(plus),-(subtract),*(multiply),/(divide),s for square root],\n");
  scanf(" %c", &c);
  printf("enter the first value\n");
  scanf("%i", &a);
